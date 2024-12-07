@@ -1,0 +1,543 @@
+
+/* code for the main body of the website*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "poppins","sans-serif";
+}
+
+body
+{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2,#c9d6ff);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #ba8e63;
+    color: #000000;
+    font-family: Times New Roman;
+    font-size: 16px;
+
+}
+
+/* login/ register css code*/
+.container 
+{
+    background: #fff;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,10.9);
+}
+
+form
+{
+    margin: 0 2rem;
+}
+
+.form-title
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align:center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+input
+{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding-left:1.5rem;
+    font-size: 15px;
+}
+
+.input-group
+{
+    padding: 1% 0;
+    position: relative;
+}
+
+.input-group i
+{
+    position:absolute;
+    color: black;
+}
+
+input:focus
+{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid hsl(327,90%,28%);
+}
+
+input::placeholder
+{
+    color: transparent;
+}
+
+label
+{
+    color: #757575;
+    position: relative;
+    left: 1.2rem;
+    top:-1.3rem;
+    cursor:auto;
+    transition: 0.3s ease all;
+    margin-bottom: 8px;
+}
+
+input:focus~label,input:not(:placeholder-shown)
+{
+    top: -3em;
+    color: hsl(327,90%,28%);
+    font-size: 15px;
+}
+
+
+.btn
+{
+    font-size:1.1rem;
+    padding: 8px 0;
+    border-radius:5px ;
+    outline:none;
+    border:none;
+    width: 100%;
+    background: rgb(125,125,235);
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.btn:hover
+{
+    background:#07001f;
+}
+
+.or
+{
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.icons
+{
+    text-align: center;
+}
+
+.icons i
+{
+    color: rgb(125,125,235);
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #dfe9f5;
+    margin:0 15px;
+    transition: 1s;
+}
+
+.icons i:hover
+{
+    background: #07001f;
+    font-size: 1.6rem;
+    border: 2px solid rgb(125,125,235);
+}
+
+.links
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top:0.9rem;
+    font-weight: bold;
+}
+
+button
+{
+    color: rgb(125,125,235);
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover
+{
+    text-decoration:underline;
+    color:blue;
+}
+
+
+
+header
+{
+    color: white;
+    text-align: center;
+}
+
+.navbar
+{
+    background-color: rgb(125,125,235); 
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 0; 
+}
+
+
+.navbar a:hover 
+{
+    text-decoration: underline;
+    transition : all 0.3s ease;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navbar ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(125,125,235);
+}
+
+.navbar li 
+{
+    float: left;
+}
+
+h1,h2, h3 ,p
+{
+    text-align: center;
+}
+
+
+footer 
+{
+    color: #000000; 
+    text-align: center;
+    padding: 10px;
+}
+
+/* last ss here*/
+
+/*code for the search bar, and the book boxes*/
+.search
+{
+    width: 60vw;
+    padding-bottom: 2em;
+    background: #fff;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.searching
+{
+    color: rgb(125,125,235);
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    float:right;
+    margin-right: 10px;
+}
+
+.containerbooks
+{
+    background: #fff;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,10.9);
+}
+
+.username
+{
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.logout
+{
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+
+/* Pagination styling */
+.pagination 
+{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.pagination a 
+{
+    text-decoration: none;
+    color: #007bff;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover 
+{
+    background-color: #007bff;
+    color: white;
+}
+
+
+.pagination a[style="font-weight: bold;"] 
+{
+    background-color: #007bff;
+    color: white;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+.pagination a[disabled] 
+{
+    background-color: #f0f0f0;
+    color: #ccc;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/* Container for all books in the search page*/
+.books-container 
+{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px;
+    width: 100%; 
+    margin: 0 auto; 
+    justify-content: space-evenly;
+    
+}
+
+.box
+{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,10.9);
+    padding: 15px;
+    width: 100%;
+    gap: 20px;
+    text-align: left;
+
+}
+
+/* Book info section */
+.box p 
+{
+    margin: 0px 0;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.box strong 
+{
+    color: #333;
+}
+
+.box form 
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box form button 
+{
+    padding: 10px 20px;
+    background-color: rgb(125,125,235);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem; 
+}
+
+/* Hover effect for unreserve button */
+.box form button:hover 
+{
+    background-color: rgb(125,125,235);
+}
+
+.box .book-actions 
+{
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Style for the reserve buttons */
+.box .book-actions button 
+{
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box .book-actions button:disabled 
+{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+.box form 
+{
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+/* Reserve button styling */
+.box form button 
+{
+    display: block; 
+    margin: 0 auto; 
+}
+
+.category
+{
+    color: inherit;
+    float:left;
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding-left:1.5rem;
+    font-size: 15px;
+}
+
+.search label
+{
+    font-size: 20px;
+}
+
+/* styling for the reserved books*/
+.books-container2 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.books-container2 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.book-box 
+{
+    flex: 0 0 31%; 
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,10.9);
+    text-align: left;
+}
+
+
+.book-box h3 
+{
+    margin-top: 0;
+}
+
+.book-box p 
+{
+    margin: 5px 0;
+}
+
+.book-box button 
+{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgb(125,125,235);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-box button:hover 
+{
+    background-color: rgb(125,125,235);
+}
